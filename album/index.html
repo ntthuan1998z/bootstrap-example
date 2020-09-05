@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Album example · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* stick first column table */
+    th:first-child {
+      position: sticky;
+      z-index: 2;
+      left: 0;
+      background-color: azure;
+    }
+
+    /* set min-width , max-width*/
+    /* vw: Relative to 1% of the width of the viewport* */
+    /*  Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm */
+    .min-vw {
+      min-width: 30vw !important;
+    }
+
+    .max-vw {
+      max-width: 20vw;
+    }
+    @media (min-width: 576px) {
+      .min-vw {
+        min-width: 12.5vw !important;
+      }
+    }
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 992px) {
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background
+              context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off
+              to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+            viewBox="0 0 24 24" focusable="false">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" /></svg>
+          <strong>Album</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <!-- filter form with grid bootstrap 4 -->
+        <div class="row my-2 bg-white border rounded">
+          <div class="col-lg-2">
+            <div class="row">
+              <label class="my-1 px-xl-1 col-xl-4 col-form-label-sm" for="inlineFormCustomSelectPref">色嚢色</label>
+              <div class="col-xl-8 col-lg-12 px-xl-1">
+                <select class="form-control-sm form-control my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <label class="my-1 px-xl-1 col-xl-4 col-form-label-sm" for="inlineFormCustomSelectPref">色嚢色</label>
+              <div class="col-xl-8 px-xl-1">
+                <select class="form-control-sm form-control my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <label class="my-1 px-xl-1 col-xl-4 col-form-label-sm" for="inlineFormCustomSelectPref">色嚢色</label>
+              <div class="col-xl-8 px-xl-1">
+                <select class="form-control-sm form-control my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <label class="my-1 px-lg-1 col-xl-2 col-form-label-sm" for="inlineFormCustomSelectPref">価格</label>
+              <div class="input-group input-group-sm col-xl-4 col-lg-5 px-lg-1">
+                <input type="text" class="my-1 form-control">
+                <div class="input-group-append my-1">
+                  <span class="input-group-text border-0 bg-transparent">円</span>
+                </div>
+              </div>
+              <label class="my-1 col-xl-1 col-lg-2"> ~ </label>
+              <div class="input-group input-group-sm col-xl-4 col-lg-5 px-lg-1">
+                <input type="text" class="my-1 form-control">
+                <div class="input-group-append my-1">
+                  <span class="input-group-text border-0 bg-transparent">円</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="row text-center">
+              <div class="col-xl-6">
+                <a href="#" class="btn btn-block btn-sm btn-primary my-1">晴れ</a>
+              </div>
+              <div class="col-xl-6">
+                <a href="#" class="btn btn-block btn-secondary my-1 btn-sm">探す</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table responsive with sticky first column, set column width in vw-->
+        <div class="table-responsive">
+          <table class="table w-auto">
+            <thead>
+              <tr>
+                <th class="min-vw max-vw" scope="col">222222222</th>
+                <th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th>
+                <th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th><th class="min-vw max-vw" scope="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mr-4">1111</h4>
+                    </div>
+                    <a>
+                      <img class="img-fluid" src="4.jpg">
+                    </a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">2</th>
+                <td>Cell</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Cell</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
